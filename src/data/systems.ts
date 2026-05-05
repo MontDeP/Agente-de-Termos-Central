@@ -26,7 +26,7 @@ export const systems: SystemData[] = [
     id: "pronto-portal",
     name: "Agrotins+",
     category: "servicos",
-    categoryLabel: "SERVIÇOS",
+    categoryLabel: "EVENTOS",
     icon: "Globe",
     description:
       "Guia oficial da Feira de Tecnologia Agropecuária do Tocantins com programação, mapa interativo, notícias e informações sobre expositores.",
@@ -150,8 +150,8 @@ export const systems: SystemData[] = [
   {
     id: "cax",
     name: "Censo Aquícola",
-    category: "servicos",
-    categoryLabel: "SERVIÇOS",
+    category: "infraestrutura",
+    categoryLabel: "PESCA",
     icon: "MessageCircle",
     description:
       "Solução digital para coleta, validação, consolidação e análise de informações da atividade aquícola no Tocantins.",
@@ -291,7 +291,7 @@ export const systems: SystemData[] = [
     id: "ficha-hospedes",
     name: "Eu Pescador",
     category: "infraestrutura",
-    categoryLabel: "INFRAESTRUTURA",
+    categoryLabel: "PESCA",
     icon: "Hotel",
     description:
       "Sistema digital para cadastro e registro de hóspedes em meios de hospedagem do estado.",
@@ -1190,8 +1190,8 @@ export const systems: SystemData[] = [
   {
     id: "agrotins",
     name: "Agrotins+",
-    category: "outros",
-    categoryLabel: "OUTROS",
+    category: "servicos",
+    categoryLabel: "EVENTOS",
     icon: "Sprout",
     description:
       "Plataforma digital do evento Agrotins com informações sobre programação, inscrições e conteúdo.",
@@ -1313,8 +1313,8 @@ export const systems: SystemData[] = [
 export const categories = [
   { id: "todos", label: "Todos" },
   { id: "saude", label: "Saúde" },
-  { id: "servicos", label: "Serviços" },
-  { id: "infraestrutura", label: "Infraestrutura" },
+  { id: "servicos", label: "Eventos" },
+  { id: "infraestrutura", label: "Pesca" },
   { id: "outros", label: "Outros" },
 ];
 
