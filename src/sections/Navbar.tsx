@@ -32,13 +32,19 @@ export function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-40 h-14 transition-all duration-300 ${
-        scrolled ? "bg-[#005A8C]/95 backdrop-blur-md" : "bg-[#005A8C]"
+        scrolled ? "bg-white/95 backdrop-blur-md" : "bg-white"
       }`}
-      style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}
+      style={{ borderBottom: "1px solid rgba(0,90,140,0.12)" }}
     >
       <div className="max-w-[1200px] mx-auto h-full flex items-center justify-between px-4 lg:px-5vw">
         {/* Logo */}
-        <div className="flex items-center bg-white rounded-lg px-3 py-1.5 gap-3">
+        <a
+          href="https://ati.to.gov.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center px-3 py-1.5 gap-3 rounded-lg"
+          aria-label="Acessar site da ATI Tocantins"
+        >
           <img
             src="/logo-ati.png"
             alt="ATI Tocantins"
@@ -50,7 +56,7 @@ export function Navbar() {
             alt="Governo do Tocantins"
             className="h-7 w-auto object-contain shrink-0"
           />
-        </div>
+        </a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8 relative">
@@ -60,8 +66,8 @@ export function Navbar() {
               onClick={() => handleNavClick(link.id)}
               className={`text-sm transition-opacity duration-200 ${
                 activeSection === link.id
-                  ? "text-white opacity-100"
-                  : "text-white opacity-70 hover:opacity-100"
+                  ? "text-[#005A8C] opacity-100"
+                  : "text-[#005A8C] opacity-70 hover:opacity-100"
               }`}
             >
               {link.label}
@@ -81,7 +87,7 @@ export function Navbar() {
 
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden p-2 text-white"
+          className="md:hidden p-2 text-[#005A8C]"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menu"
         >
@@ -91,7 +97,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-[#005A8C] overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        className={`md:hidden bg-white overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
           mobileOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
@@ -102,8 +108,8 @@ export function Navbar() {
               onClick={() => handleNavClick(link.id)}
               className={`text-left text-sm py-2 px-3 rounded-lg transition-colors duration-200 ${
                 activeSection === link.id
-                  ? "bg-white/10 text-white"
-                  : "text-white/70 hover:bg-white/5 hover:text-white"
+                  ? "bg-[#005A8C]/10 text-[#005A8C]"
+                  : "text-[#005A8C]/70 hover:bg-[#005A8C]/5 hover:text-[#005A8C]"
               }`}
             >
               {link.label}

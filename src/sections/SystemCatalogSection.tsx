@@ -14,7 +14,7 @@ export function SystemCatalogSection({ onOpenDoc }: SystemCatalogSectionProps) {
   const gridRef = useScrollReveal<HTMLDivElement>(0.1);
 
   const filteredSystems = useMemo(() => {
-    let result = systems;
+    let result = systems.slice(0, 3);
 
     if (activeFilter !== "todos") {
       result = result.filter((s) => s.category === activeFilter);
