@@ -1312,7 +1312,6 @@ export const systems: SystemData[] = [
 
 export const categories = [
   { id: "todos", label: "Todos" },
-  { id: "saude", label: "Saúde" },
   { id: "servicos", label: "Eventos" },
   { id: "infraestrutura", label: "Pesca" },
   { id: "outros", label: "Outros" },
