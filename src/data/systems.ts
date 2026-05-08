@@ -470,6 +470,6 @@ export const contacts = [
     icon: "ExternalLink",
     label: "Ouvidoria",
     value: "Acesse a Ouvidoria do Estado",
-    href: "https://to.gov.br/ouvidoria",
+    href: "https://falabr.cgu.gov.br/v2/?modoOuvidoria=1&ouvidoriaInterna=false",
   },
 ];

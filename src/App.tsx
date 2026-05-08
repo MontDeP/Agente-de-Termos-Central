@@ -3,9 +3,7 @@ import { Routes, Route } from "react-router";
 import { Navbar } from "@/sections/Navbar";
 import { HeroSection } from "@/sections/HeroSection";
 import { SystemCatalogSection } from "@/sections/SystemCatalogSection";
-import { PrivacyCommitmentSection } from "@/sections/PrivacyCommitmentSection";
 import { RightsResourcesSection } from "@/sections/RightsResourcesSection";
-import { Footer } from "@/sections/Footer";
 import { DocumentModal } from "@/components/DocumentModal";
 import { DocumentPage } from "@/pages/DocumentPage";
 import { systems } from "@/data/systems";
@@ -36,10 +34,8 @@ function HomePage() {
       <main>
         <HeroSection />
         <SystemCatalogSection onOpenDoc={handleOpenDoc} />
-        <PrivacyCommitmentSection />
         <RightsResourcesSection />
       </main>
-      <Footer />
       <DocumentModal
         system={activeSystem}
         docType={modalState.docType}

@@ -38,13 +38,7 @@ export function Navbar() {
     >
       <div className="max-w-[1200px] mx-auto h-full flex items-center justify-between px-4 lg:px-5vw">
         {/* Logo */}
-        <a
-          href="https://ati.to.gov.br"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center px-3 py-1.5 gap-3 rounded-lg"
-          aria-label="Acessar site da ATI Tocantins"
-        >
+        <div className="flex items-center px-3 py-1.5 gap-3">
           <img
             src="/logo-ati.png"
             alt="ATI Tocantins"
@@ -56,7 +50,7 @@ export function Navbar() {
             alt="Governo do Tocantins"
             className="h-7 w-auto object-contain shrink-0"
           />
-        </a>
+        </div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8 relative">

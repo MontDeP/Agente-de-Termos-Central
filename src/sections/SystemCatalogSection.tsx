@@ -53,18 +53,18 @@ export function SystemCatalogSection({ onOpenDoc }: SystemCatalogSectionProps) {
       <div className="max-w-[1200px] mx-auto px-4 lg:px-[5vw]">
         {/* Header */}
         <h2
-          className="text-[#1A1A1A] font-semibold mb-2"
+          className="text-[#1A1A1A] font-semibold mb-2 text-center"
           style={{ fontSize: "clamp(1.5rem, 3vw, 2.25rem)" }}
         >
           Sistemas e Aplicativos
         </h2>
-        <p className="text-[#5A5A5A] text-base max-w-[640px]">
+        <p className="text-[#5A5A5A] text-base max-w-[640px] text-center mx-auto">
           Encontre os termos de uso e políticas de privacidade dos serviços
           digitais disponíveis para o cidadão tocantinense.
         </p>
 
         {/* Search */}
-        <div className="mt-8 max-w-[600px]">
+        <div className="mt-8 max-w-[600px] mx-auto">
           <label htmlFor="search" className="sr-only">
             Buscar por sistema ou palavra-chave
           </label>
@@ -86,7 +86,7 @@ export function SystemCatalogSection({ onOpenDoc }: SystemCatalogSectionProps) {
         </div>
 
         {/* Filter Tags */}
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2 justify-center">
           {categories.map((cat) => (
             <button
               key={cat.id}

@@ -6,7 +6,7 @@ export function RightsResourcesSection() {
   const sectionRef = useScrollReveal<HTMLDivElement>(0.1);
 
   return (
-    <section className="bg-[#F5F5F0] py-16 md:py-20">
+    <section className="bg-[#F5F5F0] pt-16 pb-8 md:pt-20 md:pb-10">
       <div className="max-w-[1200px] mx-auto px-4 lg:px-[5vw]">
         <h2
           className="text-[#1A1A1A] font-semibold text-center"
